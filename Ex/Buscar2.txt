@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Buscar2{
+ public static void main(String args[]){
+
+  Scanner in = new Scanner(System.in);
+  int longitud = 0;
+  int encontrar = 0;
+
+
+	System.out.println("¿Cuántos números desea ingresar?");
+	longitud = in.nextInt();
+
+int numeros[] = new int[longitud];
+
+	for(int i = 0; i<numeros.length; i++){
+		numeros[i] = in.nextInt();
+ 	}
+
+	System.out.println("¿Qué número desea encontrar?");
+	encontrar = in.nextInt();
+
+
+for(int i = 0; i < numeros.length; i++){
+
+	if( numeros[i] == encontrar ){
+		System.out.println("El número fue encontrado");
+	}else{
+		System.out.println("El número no fue encontrado");
+	}
+  }
+ }
+}

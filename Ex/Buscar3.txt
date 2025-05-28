@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Buscar3{
+ public static void main(String args[]){
+ 
+ Scanner in = new Scanner(System.in);
+ int longitud = 0;
+
+	System.out.println("¿Cuántos números desea ingresar?");
+	longitud = in.nextInt();
+
+ int numeros[] = new int[longitud];
+
+	for(int i = 0; i<numeros.length; i++){
+		System.out.println("Indique el valor#" + (i+1));
+		numeros[i] = in.nextInt();
+	}
+	
+ int referencia = 0;
+	System.out.println("Introduce un número de referencia: ");
+	referencia = in.nextInt();
+
+int num_mayores = 0;
+	
+	for(int i = 0; i<numeros.length; i++){
+		if(numeros[i] > referencia ){
+		  num_mayores = in.nextInt();
+		}	
+	}
+
+int total_mayores = num_mayores.length;
+
+	System.out.println("Los números mayores encontrados son: " + total_mayores);
+
+	System.out.println("Los números mayores son: " "[" + num_mayores + "]");
+
+
+ } 
+}
